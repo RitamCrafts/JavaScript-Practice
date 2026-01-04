@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: radial-gradient(to main-container, lightblue,rgb(40, 243, 243));
+            margin:0;
+            padding:45dvh;
+        }
+
+        .search{
+            outline: none;
+            border: 1px solid rgb(89, 89, 89);
+            height: 2.6rem;
+            width: clamp(10rem,30rem,30rem);
+            display: inline-block;
+            border-radius: 4rem;
+            padding: 0 1rem;
+            padding-right: 4rem;
+            font-size: 1.04rem;
+        }
+        .main-container{
+            position: relative;
+            display: block;
+            width: fit-content;
+            margin-top: 10px;
+            margin: 0 auto;
+        }
+        .search-button{
+            position: absolute;
+            right:0;
+            top:0;
+            bottom: 0;
+            width:4rem;
+            border: 1px solid rgb(89, 89, 89);
+            border-radius:0 4rem 4rem 0;
+            cursor: pointer;
+        }
+        .search-button:hover{
+            opacity: 0.8;
+        }
+        .search-button:active{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <input type="text" class="search" placeholder="Search" id="search">
+        <button class="search-button" onclick="redirect()">&#128269;</button>
+    </div>
+    <script>
+        console.log("JS active");
+        const search_bar=document.getElementById("search");
+        function redirect() {
+            let linkhref="https://www.google.com/search?q=";
+            let search_bar_value=search_bar.value;
+            word="";
+            for (let i = 0; i < search_bar_value.length; i++) {
+                let letter = search_bar_value[i];
+                if (letter == " "){
+                    linkhref=linkhref+word+"+";
+                    word="";
+                }
+                else{
+                    word=word+letter;
+                }
+            }
+            linkhref=linkhref+word;
+            window.location.href=linkhref;
+            
+        }
+        
+    </script>
+</body>
+</html>
