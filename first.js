@@ -8,9 +8,10 @@
 //console.log(Boolean(1)); // true
 //console.log(1+2+"34"+5+6);// 33456 //(after string all additions are string like aka concatination)
 
-//console.log("0">1);
-//console.log("2">1);
-//console.log("02">1);
+// console.log("0">1);//false
+// console.log("2">1);//true
+// console.log("02">1);//true
+
 //console.log(null==0);//false
 // console.log(null>0);//false
 // console.log(null>=0);//true
