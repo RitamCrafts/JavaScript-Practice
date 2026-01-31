@@ -36,24 +36,35 @@
 // console.log(arrNew);//[ 0, 1, 3, 4, 5, 6 ] // doesnt change original array
 
 
-let gamesOutdoor=["cricket","football","badminton","basketball"];
-let gamesIndoor=["chess","ludo","buisness","cards"];
-console.log(gamesOutdoor.push(gamesIndoor));//5//push() returns new length of array
-console.log(gamesOutdoor);//['cricket','football','badminton','basketball',[ 'chess', 'ludo', 'buisness', 'cards' ]]
-gamesOutdoor.pop();//popping the last element - [ 'chess', 'ludo', 'buisness', 'cards' ]
-/* to fix the arr nesting and add items properly,*/
-let gamesAll=[...gamesOutdoor,...gamesIndoor]
-console.log(gamesAll);//o/p below
-/*[
-  'cricket',
-  'football',
-  'badminton',
-  'basketball',
-  'chess',
-  'ludo',
-  'buisness',
-  'cards'
-]*/
+// let gamesOutdoor=["cricket","football","badminton","basketball"];
+// let gamesIndoor=["chess","ludo","buisness","cards"];
+// console.log(gamesOutdoor.push(gamesIndoor));//5//push() returns new length of array
+// console.log(gamesOutdoor);//['cricket','football','badminton','basketball',[ 'chess', 'ludo', 'buisness', 'cards' ]]
+// gamesOutdoor.pop();//popping the last element - [ 'chess', 'ludo', 'buisness', 'cards' ]
+// /* to fix the arr nesting and add items properly,*/
+// let gamesAll=[...gamesOutdoor,...gamesIndoor]
+// console.log(gamesAll);//o/p below
+// /*[
+//   'cricket',
+//   'football',
+//   'badminton',
+//   'basketball',
+//   'chess',
+//   'ludo',
+//   'buisness',
+//   'cards'
+// ]*/
+
+
+// let mapArray=[1,2,3,4,5,6];
+// console.log(mapArray.map(x => x**2));//[ 1, 4, 9, 16, 25, 36 ]//map used like this transforms all elemrnts, good shortcut
+
+
+// let otherArr=[1,2,3,4,5];
+// console.log(otherArr.unshift(0));//6//returns new length 
+// console.log(otherArr);//[ 0, 1, 2, 3, 4, 5 ]//increase index of all by 1 which is complex and then adds 0 at the start
+// console.log(otherArr.shift());//0//basically a front pop
+// console.log(otherArr);//[ 1, 2, 3, 4, 5 ]//pops first element and then decrease index of all by 1
 
 
 
