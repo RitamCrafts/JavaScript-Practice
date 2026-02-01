@@ -35,9 +35,10 @@
 // console.log(arrNew);
 // console.log(arrNew.pop(2));//8 //it removes last and not index 2 so argument not work with pop
 // console.log(arrNew);
-// /*How to remove any index then?*/
+// /*How to remove any index then? \/*/
 // console.log(arrNew.splice(2,1));//[ 2 ]//splice(<starting Index(inc)>,<no. of numbers to remove>) IMP, also it canges original array unlike slice
 // console.log(arrNew);//[ 0, 1, 3, 4, 5, 6 ]
+
 // console.log(arrNew.slice(1,4));//[ 1, 3, 4 ]//slice(<start index(inc)>,<end index(exc)>)
 // console.log(arrNew);//[ 0, 1, 3, 4, 5, 6 ] // doesnt change original array
 
